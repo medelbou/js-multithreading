@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Concurrency Model and Multithreading in Javascript</title>
+    <meta charset="UTF-8"/>
+    <link href="/src/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="app">
+    <h1>Concurrency Model and Multithreading in Javascript
+    </h1>
+    <a href="./single-thread.html">Long running task in the main thread</a>
+    <a href="./multi-thread.html">Long running task in a worker thread</a>
+
+</div>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').then(function (registration) {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function (err) {
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+</script>
+</body>
+
+</html>

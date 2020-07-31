@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+}
+
+.counter {
+    font-size: 2em;
+}
+.log {
+    font-size: 2em;
+    min-height: 30px;
+}
+a, a:active, a:visited {
+    color: blue;
+    display: block;
+    padding: 5px 0;
+}

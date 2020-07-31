@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Concurrency Model and Multithreading in Javascript</title>
+    <meta charset="UTF-8" />
+    <link href="src/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <a href="/">Home</a>
+        <h1>Long running task in a worker thread</h1>
+        <p id="counter" class="counter">0</p>
+        <p id="log" class="log"></p>
+        <button id="plusOneBtn">+1</button>
+        <button id="resetBtn">Reset</button>
+        <button id="longRunningTaskBtn">Count to a billion</button>
+        <p>Click on the `Count to a billion` button, this will start the counting in a worker thread, which takes few
+            seconds, while counting is still in progress, you should still be able to interact with the UI by cliking
+            the `+1` button.</p>
+    </div>
+
+    <!--<script src="src/index.js"></script>-->
+    <script src="src/multi-thread.js"></script>
+</body>
+
+</html>
