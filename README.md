@@ -11,14 +11,14 @@ The JavaScript engine runs an infinite loop, called the event loop, looking for 
 
 ```javascript
 const queue = {
-    waitForMessage: () => {
-    },
-    processNextMessage: () => {
-    },
+  waitForMessage: () => {
+  },
+  processNextMessage: () => {
+  },
 };
 
 while (queue.waitForMessage()) {
-    queue.processNextMessage()
+  queue.processNextMessage()
 }
 ```
 
@@ -26,15 +26,15 @@ The following code:
 
 ```javascript
 function funcOne() {
-    funcTwo();
+  funcTwo();
 }
 
 function funcTwo() {
-    setTimeout(funcThree);
+  setTimeout(funcThree);
 }
 
 function funcThree() {
-    console.log('Hello, World!');
+  console.log('Hello, World!');
 }
 
 funcOne();
