@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cache-v2';
+const CACHE_NAME = 'cache-v1';
 
 self.addEventListener('install', function (event) {
   console.log('ServiceWorker installing...');
@@ -9,14 +9,12 @@ self.addEventListener('install', function (event) {
         return cache.addAll([
           './',
           './index.html',
-          './src/style.css',
+          './multi-thread.html',
+          './single-thead.html',
           './src/index.js',
           './src/multi-thread.js',
+          './src/style.css',
           './src/worker.js',
-          './sw/index.html',
-          './sw/',
-          './single-thead.html',
-          './multi-thread.html'
         ]);
       })
     );

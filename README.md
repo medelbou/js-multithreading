@@ -67,8 +67,7 @@ the result will look like this:
 ```
 Message 3: Sync code
 Message 2: Promise
-undefined
-VM372200:1 Message 1: setTimeout
+Message 1: setTimeout
 ```
 
 

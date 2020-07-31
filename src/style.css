@@ -2,6 +2,9 @@ body {
     font-family: sans-serif;
 }
 
+#app {
+    padding: 20px;
+}
 .counter {
     font-size: 2em;
 }
